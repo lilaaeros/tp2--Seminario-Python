@@ -83,7 +83,7 @@ def codigo_descuento (us,date:str):
         k = 30 - len(us) - len(date) - 2 
         cadena_aleatoria = "".join(random.choices(caracteres, k=k)) # pq si no me quedan separados A , 2 , K , M
 
-        print(f"{us.upper}-{date}-{cadena_aleatoria}")
+        print(f"{us.upper()}-{date}-{cadena_aleatoria}")
     else:
         print (" El usuario debe tener 15 caracteres o menos")
 
